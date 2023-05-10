@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif; */
+}
+
+#header-cities {
+    display: flex;
+    gap: 40px;
+    font-size: 110%;
+}
+
+.whole-page{
+    height: auto;
+}
+
+.page-header {
+    display: flex;
+    background-color: #9fc5f8;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: white;
+    font-weight: 500;
+    font-size: 220%;
+}
+
+.main-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 180%;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 150%;
+}
+
+.temp-selector {
+    display: flex;
+    gap: 10px;
+}
+
+hr{
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-left: 25px;
+    /* gap: 10px; */
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    height: 300px;
+}
+
+#column1{
+    margin-left: 0px !important;
+}
+
+.column img{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.column p{
+    font-size: 110%;
+}
+
+.high-and-low-temps {
+    display: flex;
+    gap: 30%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#cookies-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 2px 20px;
+    height: 100px;
+    background-color: #eeeeee;
+    /* position: fixed; */
+}
+
+#cookies-box img{
+    width: 60px;
+}
+
+.stop-cookie-time{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+#i-accept {
+    background-color: #9fc5f8;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    padding: 0px 8px;
+}
+
+.white-no-underline {
+    color: white;
+    text-decoration: none;
+}
+
+.red-text{
+    color: #d1423f;
+}
+
+.blue-text{
+    color: #2b78e4;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400&family=Roboto+Flex:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <title>Button Clicker Assignment</title>
+</head>
+
+<body>
+    <div class="whole-page">
+        <div class="navbar">
+            <p class="title">Dojonary</p>
+            <input type="text" name="search" id="search" placeholder="Search">
+            <!-- does input type text have to be in a form? -->
+            <button id="login" onclick="changeText(this)">Login</button>
+        </div>
+        <div class="main-box">
+            <div class="column1">
+                <div class="definition-box">
+                    <div class="definition-title">
+                        <p class="title">ninja</p>
+                        <p class="part-of-speech">noun</p>
+                        <p class="plural">Plural: <span class="plural-form">ninjas</span></p>
+                        <button class="likes" onclick="pageAlert()">13 likes</button>
+                    </div>
+                    <p class="actual-definition">A practitioner skilled in the <br><a href="#">Japanese</a> art of
+                        <a href="#">ninjutsu</a>
+                    </p>
+                </div>
+                <div class="definition-box">
+                    <div class="definition-title">
+                        <p class="title">ninja</p>
+                        <p class="part-of-speech">noun</p>
+                        <p class="plural">Plural: <span class="plural-form">ninjas</span></p>
+                        <button class="likes" onclick="pageAlert()">37 likes</button>
+                    </div>
+                    <p class="actual-definition">A <a href="#">programmer</a> who breaks <br>down problems with
+                        <a href="#">zen</a>-like focus
+                    </p>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="col2-box">
+                    <p id="dojonary-is-defined-sentence">Dojonary is <br>defined by <span
+                            id="you-define-dojonary">YOU</span></p>
+                    <button id="add-definition" onclick="remove(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

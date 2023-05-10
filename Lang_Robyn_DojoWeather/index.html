@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400&family=Roboto+Flex:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <div class="whole-page">
+        <div class="page-header">
+            <h1>DojoWeather</h1>
+            <div onclick="loadingWeatherReport()" id="header-cities">
+                <a class="white-no-underline" href="#">Burbank</a>
+                <a class="white-no-underline" href="#">Chicago</a>
+                <a class="white-no-underline" href="#">Dallas</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-header">
+                <h2>San Jose</h2>
+                <div class="temp-selector">
+                    <label for="">show temperature in </label>
+                    <select name="" id="">
+                        <option value="">C</option>
+                        <option value="">F</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column" id="column1">
+                    <h3>Today</h3>
+                    <img src="./assets/some_rain.png" alt="">
+                    <p>some rain</p>
+                    <div class="high-and-low-temps">
+                        <p class="red-text">24</p>
+                        <p class="blue-text">18</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Tomorrow</h3>
+                    <img src="./assets/some_sun.png" alt="">
+                    <p>some sun</p>
+                    <div class="high-and-low-temps">
+                        <p class="red-text">27</p>
+                        <p class="blue-text">19</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Friday</h3>
+                    <img src="./assets/some_clouds.png" alt="">
+                    <p>some clouds</p>
+                    <div class="high-and-low-temps">
+                        <p class="red-text">21</p>
+                        <p class="blue-text">16</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Saturday</h3>
+                    <img src="./assets/some_sun.png" alt="">
+                    <p>some sun</p>
+                    <div class="high-and-low-temps">
+                        <p class="red-text">26</p>
+                        <p class="blue-text">21</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cookies-box">
+                <img src="./assets/cookie.png" alt="image of a cookie">
+                <div class="stop-cookie-time">
+                    <h4>Stop! Cookie time</h4>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social
+                        media features and to analyze our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button onclick="dismissCookies()" id="i-accept">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

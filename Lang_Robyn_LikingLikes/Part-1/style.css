@@ -1,0 +1,61 @@
+* {
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif; */
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+}
+
+.column1{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px #e0dfdf;
+    flex: .6;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.feed-row{
+    padding: 20px;
+    width: auto;
+}
+
+.column2{
+    flex: 1;
+}
+
+.name-and-likes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.likes-number-and-button{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.user{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* .number-of-likes{} */
+
+.like-button{
+    background-color: #f2ca4e;
+    box-shadow: 3px 3px #000000;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+/* .posted-text{} */

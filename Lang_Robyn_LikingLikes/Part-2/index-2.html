@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400&family=Roboto+Flex:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <title>Liking Likes Assignment | Part 2</title>
+</head>
+
+<body>
+    <div class="whole-page">
+        <p id="title-bar">Network</p>
+        <p id="feed-title">Your Feed</p>
+        <div id="main-box">
+            <div class="avatar-and-name">
+                <img src="../assets/user.png" alt="user profile image" id="profile-image">
+                <a href="#" id="add-avatar">Add Avatar</a>
+                <p id="profile-username">Robyn Lang</p>
+            </div>
+            <div id="feed-column">
+                <div class="feed-row">
+                    <div class="feed-name-and-likes">
+                        <p class="user">Neil M</p>
+                        <div class="likes-number-and-button">
+                            <p class="number-of-likes"><span id="post-1">9</span> like(s)</p>
+                            <button onclick="increaseLikes1()" class="like-button">Like</button>
+                        </div>
+                    </div>
+                    <p class="posted-text">I just set up this new discord bot, let me know what you all think. <a
+                            href="#">link</a></p>
+                </div>
+                <div class="feed-row">
+                    <div class="feed-name-and-likes">
+                        <p class="user">Nichole K</p>
+                        <div class="likes-number-and-button">
+                            <p class="number-of-likes"><span id="post-2">12</span> like(s)</p>
+                            <button onclick="increaseLikes2()" class="like-button">Like</button>
+                        </div>
+                    </div>
+                    <p class="posted-text">Just finished my <a href="#">next comic,</a> check it out.</p>
+                </div>
+                <div class="feed-row">
+                    <div class="feed-name-and-likes">
+                        <p class="user">Jim R</p>
+                        <div class="likes-number-and-button">
+                            <p class="number-of-likes"><span id="post-3">9</span> like(s)</p>
+                            <button onclick="increaseLikes3()" class="like-button">Like</button>
+                        </div>
+                    </div>
+                    <p class="posted-text">I can't stop listening to the <a href="#">new album</a>. Who else is liking
+                        it?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

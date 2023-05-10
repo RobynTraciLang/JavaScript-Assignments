@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@300&family=Roboto+Flex:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <title>Profile Page Assignment</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div id="site-choices-bar">
+                <p id="profile"><a href="https://www.dictionary.com/browse/profile" target="_blank"
+                        rel="noreferrer noopener">Profile</a></p>
+                <p><a href="https://www.youtube.com/watch?v=t5CeQ3twVaI" target="_blank"
+                        rel="noreferrer noopener">Home</a></p>
+                <p id="my-profile"><a
+                        href="https://help.twitter.com/en/managing-your-account/how-to-customize-your-profile"
+                        target="_blank" rel="noreferrer noopener">My Profile</a></p>
+                <p><a href="https://hbr.org/2022/12/which-connections-really-help-you-find-a-job" target="_blank"
+                        rel="noreferrer noopener">Find Connections</a></p>
+            </div>
+            <button id="sign-out" onmouseover="changeColor(this)" onmouseleave="changeBack(this)">Sign Out</button>
+        </div>
+        <div id="main-box">
+            <div class="column1">
+                <div class="user-card-box">
+                    <div class="user-card-top-bar" onmouseover="changeColor(this)" onmouseleave="changeBack(this)">
+                    </div>
+                    <div>
+                        <img id="Robyn" src="./1614265160__images/images/robyn_smiling_hoops_bw.jpg"
+                            alt="profile picture">
+                    </div>
+                    <div class="user-info">
+                        <h1>Robyn Traci Lang</h1>
+                        <div class="city">
+                            <!-- <img src="./1614282895__icons/icons/map-marker.png" alt="location pointer"> -->
+                            <p>Los Angeles</p>
+                        </div>
+                        <div class="user-bio">
+                            <p>Developer | Engineer | Creator <br> Master of shadows and the Internet!</p>
+                            <div class="profile-settings-link">
+                                <!-- <img src="./1614282895__icons/icons/gear.png" alt="settings gear icon"> -->
+                                <a href="#" onclick="changeUserName()">edit profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-box">
+                    <div class="education-top-bar">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="education-text">
+                        <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                        <h3>Mar 2023 - Oct 2023</h3>
+                        <p>Triple black belt in Python, Algorithms, and Front-end Web Development. <br><br>Black belt in
+                            Programming Basics and Web Fundamentals. <br><br>Developed a project that turns off a
+                            morning alarm by user whistling.</p>
+                        <!-- <br>
+                        <h2>Nintendo - Game Developer Internship</h2>
+                        <h3>Jan 2024 - Dec 2024</h3>
+                        <p>Worked on the development team that brought Tetris back to the masses (where it belongs).</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="connection-requests-box">
+                    <div class="connection-request-top-bar">
+                        <p id="number-of-requests">2</p>
+                        <h3>Connection Requests</h3>
+                    </div>
+                    <div class="requested-connections1">
+                        <div class="photo-and-name">
+                            <img class="requested-connections-photo" src="./1614265160__images/images/todd-s.jpg"
+                                alt="profile pic of connection requester">
+                            <p>Todd E</p>
+                        </div>
+                        <div class="accept-and-close">
+                            <img onclick="removeThisRequest1(), acceptRequest()" class="icons" src="./1614282895__icons/icons/accept-circle.png" alt="check mark">
+                            <img onclick="removeThisRequest1()" class="icons" src="./1614282895__icons/icons/close-circle.png" alt="close out x">
+                        </div>
+                    </div>
+                    <div class="requested-connections2">
+                        <div class="photo-and-name">
+                            <img class="requested-connections-photo" src="./1614265160__images/images/phil-s.jpg"
+                                alt="profile pic of connection requester">
+                            <p>Phil K</p>
+                        </div>
+                        <div class="accept-and-close">
+                            <img onclick="removeThisRequest2(), acceptRequest()" class="icons" src="./1614282895__icons/icons/accept-circle.png" alt="check mark">
+                            <img onclick="removeThisRequest2()" class="icons" src="./1614282895__icons/icons/close-circle.png" alt="close out x">
+                        </div>
+                    </div>
+                </div>
+                <div class="existing-user-connections-box">
+                    <div class="user-connections-top-bar">
+                        <p id="number-of-connections">501</p>
+                        <h3>Your Connections</h3>
+                    </div>
+                    <div class="existing-user-connections">
+                        <img src="./1614265160__images/images/adrien-s.jpg" alt="profile pic of current connection">
+                        <p>Adrien D</p>
+                    </div>
+                    <div class="existing-user-connections">
+                        <img src="./1614265160__images/images/anne-s.jpg" alt="profile pic of current connection">
+                        <p>Anne J</p>
+                    </div>
+                    <div class="existing-user-connections">
+                        <img src="./1614265160__images/images/alayne-s.jpg" alt="profile pic of current connection">
+                        <p>Alayne T</p>
+                    </div>
+                    <div class="existing-user-connections">
+                        <img src="./1614265160__images/images/arry-s.jpg" alt="profile pic of current connection">
+                        <p>Arry Y</p>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button class="dark-mode" onclick="activateDarkMode(body)" onmouseover="changeColor(this)" onmouseleave="changeBack(this)">Activate Dark Mode</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
