@@ -5,9 +5,9 @@ function getUserName(element){
     currentUserName = element.value;
 }
 
-function makeCoderCard(data){
-    let res = 
-}
+// function makeCoderCard(data){
+//     let res = 
+// }
 
 async function search(){
     let response = await fetch("https://api.github.com/users/" + currentUserName);
