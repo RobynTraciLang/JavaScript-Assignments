@@ -8,24 +8,45 @@
 }
 
 .blocks {
-    margin: 10px;
+    margin: 5px;
     padding: 20px;
 }
 
 @media only screen and (max-width: 599px) {
     .blocks {
         background-color: yellow;
+        height: 100px;
+        /* for phone users, give each button its own line. */
+    }
+    .stretch{
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .blocks {
         background-color: blue;
+        width: 600px;
+        /* place two buttons per line here. */
+    }
+    .tablet {
+        display: flex;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
     .blocks {
         background-color: red;
+        width: 100%;
+    }
+    .stretch {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .tablet{
+        display: flex;
+        width: 100%;
     }
 }
