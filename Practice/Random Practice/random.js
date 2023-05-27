@@ -1,13 +1,13 @@
-// var floor = Math.floor(1.8);
-// var ceiling = Math.ceil( Math.PI );
-// var random = Math.random();
+// let floor = Math.floor(1.8);
+// let ceiling = Math.ceil( Math.PI );
+// let random = Math.random();
 
 // console.log(floor);
 // console.log(ceiling);
 // console.log(random);
 
 // function d6() {
-//     var roll = Math.random();
+//     let roll = Math.random();
 //     if (roll > .1 && roll < .2) {
 //         roll = 1;
 //     }
@@ -32,23 +32,10 @@
 //     return roll;
 // }
 
-// var playerRoll = d6();
+// let playerRoll = d6();
 // console.log("The player rolled: " + playerRoll);
 
-// Another way:
-function d6() {
-    var roll = Math.random();
-    let numbers = [1, 2, 3, 4, 5, 6];
-    for (i = 0; i < numbers.length; i++) {
-        roll = Math.ceil(Math.random(numbers[i]*10));
-    }
-    return roll;
-}
-
-var playerRoll = d6();
-console.log("The player rolled: " + playerRoll);
-
-var lifesAnswers = [
+let lifesAnswers = [
     "It is certain.",
     "It is decidedly so.",
     "Without a doubt.",
@@ -71,6 +58,21 @@ var lifesAnswers = [
     "Very doubtful."
 ];
 
-function answerQuestions() {
-
+function provideRandomAnswers() {
+    // RANDOMLY CHOOSE A NUMBER BETWEEN 0 - 19
+    let randomNumber = Math.floor(Math.random() * 20); // 0 - 0.9999 * 20 = 0 - 19.9999999
+    // GRAB THE RANDOM ANSWER USING THE RANDOM NUMBER
+    let randomAnswer = lifesAnswers[randomNumber]
+    console.log(randomAnswer)
+    // DISPLAY THE RESPONSE
+    // let element = document.querySelector(".output")
+    // element.innerText = randomAnswer
 }
+
+provideRandomAnswers();
+
+// let blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+// let t = setInterval(function () {
+//     let ele = document.getElementById('myBlinkingDiv');
+//     ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+// }, blink_speed);
