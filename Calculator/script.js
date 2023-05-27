@@ -1,83 +1,85 @@
-// const display = document.getElementById("display");
-// let number1 = "";
-// let number2 = "";
-// let op = "";
+const display = document.getElementById("display");
+// working
+let number1 = "";
+// working
+let number2 = "";
+// working
+let operator = "";
+// working
 
-function press(number){
-    let displayDiv = document.querySelector("#display");
-    displayDiv.innerText = number;
+function press(number) {
+    number1 += number;
+    display.innerText = number1;
     console.log(number)
-    return number;
 }
+// working
 
-function setOP(op){
-    let operatorButtons = document.querySelector(".operator")
-    if(op == '+'){
-        console.log("+")
-    }    
-    if(op == '-'){
-        console.log("-")
-    }
-    if(op == '*'){
-        console.log("*")
-    }
-    if(op == '/'){
-        console.log("/")
-    }
+function setOP(button) {
+    operator = button;
+    number2 = number1
+    number1 = ""
+    console.log(operator)
+    console.log(number2)
+    console.log(number1)
 }
+// working
 
-function clr(){
-    let displayDiv = document.querySelector("#display");
-    displayDiv.innerText = "0";
+function clr() {
+    display.innerText = "0";
+    number1 = "";
+    console.log(number1)
+    // working
+    number2 = "";
+    console.log(number2)
+    // working
+    operator = "";
+    console.log(operator)
+    // working
 }
+// working
 
-function calculate(){
-    let displayDiv = document.querySelector("#display");
-    let displayText = displayDiv.innerText;
-    let operator = setOP();
-    let myNumber = press();
-    console.log(myNumber)
+function calculate() {
+    let a = parseFloat(number2);
+    let b = parseFloat(number1);
     let calculation = 0;
 
-    if (operator === "+"){
-        calculation = Number(displayText) + Number(displayText);
-        displayText = calculation;
-        console.log(calculation);
+    if (operator === "+") {
+        calculation = a + b;
+    } else if (operator === "-") {
+        calculation = a - b;
+    } else if (operator === "*") {
+        calculation = a * b;
+    } else if (operator === "/") {
+        calculation = a / b;
     }
-    else if(operator === "−"){
-        calculation = Number(displayText) - Number(displayText);
-        displayText = calculation;
-        console.log(calculation);
-    }
-    else if(operator === "×"){
-        calculation = Number(displayText) * Number(displayText);
-        displayText = calculation;
-        console.log(calculation);
-    }
-    else if(operator === "÷"){
-        calculation = Number(displayText) / Number(displayText);
-        displayText = calculation;
-        console.log(calculation);
-    }
-    return calculation;
+
+    number1 = calculation;
+    operator = "";
+    display.innerHTML = calculation;
+    console.log(calculation)
+
 }
+// modified from Marisa's source code, shared on assignment page. I have left it commented out below for my future reference. I decided to go with concepts I already understand, instead of switch, which I haven't learned yet. But it's here when I need to look back and see how it works.
 
 // function calculate() {
 //     let a = parseFloat(num2);
 //     let b = parseFloat(num1);
-//     let calculation = 0;
-
-//     if (operatorUsed === "+") {
-//         calculation = a + b;
-//     } else if (operatorUsed === "-") {
-//         calculation = a - b;
-//     } else if (operatorUsed === "*") {
-//         calculation = a * b;
-//     } else if (operatorUsed === "/") {
-//         calculation = a / b;
+//     let res = 0;
+//     switch (op) {
+//         case "+":
+//             res = a + b;
+//             break;
+//         case "-":
+//             res = a - b;
+//             break;
+//         case "*":
+//             res = a * b;
+//             break;
+//         case "/":
+//             res = a / b;
+//             break;
 //     }
-
-//     num1 = calculation;
-//     operatorUsed = "";
-//     display.innerHTML = calculation;
+//     num1 = res;
+//     op = "";
+//     display.innerHTML = res;
 // }
