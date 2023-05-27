@@ -1,40 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
+body {
     background-color: black;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
 .row div {
+    line-height: 0;
     width: 20px;
     height: 20px;
     display: inline-block;
-    margin-bottom: 0px !important;
 }
 
 .brick {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
     background-color: blue;
-    margin-bottom: 0px !important;
 }
 
 .coin {
+    display: inline-block;
     background-image: url("assets/coin.gif");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 0px !important;
 }
 
 #pacman {
+    display: inline-block;
     background-image: url("./assets/pacman.gif");
     background-repeat: no-repeat;
     background-size: contain;
     width: 20px;
     height: 20px;
     position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-.empty{
-    margin-bottom: 0px !important;
+.empty {
+    display: inline-block;
+    background-color: black;
+    height: 20px;
+    width: 20px;
 }
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+    .row {
+        line-height: 0;
+    }
+    .wall {
+        background-color: blue; 
+        height: 40px; 
+        width: 40px;
+        display: inline-block;
+    }
+    .sushi {
+        background-color: black; 
+        height: 40px; 
+        width: 40px;
+        display: inline-block;
+        background-image: url('sushi.png');
+    }
+    .blank {
+        background-color: black; 
+        height: 40px; 
+        width: 40px;
+        display: inline-block;
+    }
+    #ninjaman {
+        background-color: black; 
+        height: 40px; 
+        width: 40px;
+        display: inline-block;
+        background-image: url('ninjaman.gif');
+        background-size: contain;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+    } */
